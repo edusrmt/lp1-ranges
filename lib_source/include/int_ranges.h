@@ -26,6 +26,13 @@ namespace ir {
     /// Rotate elements in range.
     value_type * rotate( value_type *first, value_type *n_first, value_type *last );
 
-    // TODO: Add the rest of the function prototypes here
+    /// Multiply all elements of array by `scalar` in range `[first;last)`
+    void scalar_multiplication(value_type *first, value_type *last, int scalar);
+
+    /// Return scalar product between two vectors in range `[first;last)`
+    value_type dot_product (value_type *a_first, const value_type *a_last, const value_type *b_first);
+
+    /// Compact array in range `[first;last)` and returns new last pointer.
+    value_type * compact (value_type *first, value_type *last);
 }
 #endif
