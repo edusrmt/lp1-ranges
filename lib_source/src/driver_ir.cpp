@@ -6,9 +6,14 @@ using namespace std;
 // g++ -std=c++11 ./src/driver_ir.cpp ./src/int_ranges.cpp -I ./include
 
 int main () {
-    int vetor[] = {-2, -8, 2, 7, -3, 10, 1, 0, -3, 7};
+    int A[] = {1 , 2 , 1 , 2 , 3 , 3 , 1 , 2 , 4 , 5 , 3 , 4 , 5};
 
-    cout << *ir::compact(begin(vetor), end(vetor)) << endl;    
+    auto last = ir::unique(begin(A), end(A));
 
+    for (auto i(begin(A)); i != last; ++i) {
+        cout << *i << " ";
+    }
+
+    cout << endl;
     return 0;
 }

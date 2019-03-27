@@ -22,10 +22,15 @@ namespace ir {
         return min;
     }
 
-    value_type * copy(const value_type *first_, const value_type *last_, value_type *d_first_ )
+    value_type * copy(const value_type *first, const value_type *last, value_type *d_first)
     {
-        // TODO: place your code solution here!
-        return nullptr;
+        while(first != last) {
+            *d_first = *first;
+            ++d_first;
+            ++first;
+        }
+
+        return d_first;
     }
 
     void reverse(value_type *first, value_type*last)
@@ -76,5 +81,21 @@ namespace ir {
         }
 
         return newFirst;
+    }
+
+    value_type * unique (value_type *first, value_type *last) {
+        value_type *newLast = first;
+        value_type *fixFirst = first;
+
+        while (first != last) {
+            if(std::find(fixFirst, newLast, *first) == newLast) {
+                *newLast = *first;
+                ++newLast;
+            }
+
+            ++first;
+        }
+
+        return newLast;
     }
 }

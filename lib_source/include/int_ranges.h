@@ -34,5 +34,8 @@ namespace ir {
 
     /// Compact array in range `[first;last)` and returns new last pointer.
     value_type * compact (value_type *first, value_type *last);
+
+    /// Remove duplicates and return the new last index of the array.
+    value_type * unique (value_type *first, value_type *last);
 }
 #endif
