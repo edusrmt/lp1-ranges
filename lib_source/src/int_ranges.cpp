@@ -1,4 +1,5 @@
 #include "../include/int_ranges.h"
+#include <iostream>
 
 namespace ir {
     void negate(value_type *first, value_type *last)
@@ -45,8 +46,19 @@ namespace ir {
 
     value_type * rotate(value_type *first, value_type *n_first, value_type *last )
     {
-        // TODO: place your code solution here!
-        return nullptr;
+        int offset = std::distance(first, n_first) / 2;
+
+        while (first != last - 2) {
+            std::cout << "Swaping " << *first << " and " << *n_first << std::endl;
+            std::swap(*first, *n_first);
+            ++first;
+            ++n_first;
+
+            if(n_first == last) {
+                n_first = first + offset;
+                offset /= 2;
+            }
+        }
     }
 
     void scalar_multiplication(value_type *first, value_type *last, int scalar) {
@@ -97,5 +109,36 @@ namespace ir {
         }
 
         return newLast;
+    }
+
+    value_type * sort_marbles (value_type *first, value_type *last) {
+        value_type *left = first;
+        value_type *right = last - 1;
+
+        while (left < right) {
+            if(*left == 1) {
+                std::swap(*left, *right);
+                --right;
+            } else
+                ++left;
+        }
+
+        return right;
+    }
+
+    void partition (value_type *first, value_type *last, value_type *pivot) {
+        value_type *left = first;
+        value_type *middle = first;
+        value_type *right = last - 1;
+        value_type pivot_value = *pivot;
+
+        while (middle <= right) {
+            if (*middle < pivot_value)
+                std::swap(*left++, *middle++);
+            else if (*middle == pivot_value)
+                ++middle;
+            else 
+                std::swap(*middle, *right--);
+        }
     }
 }

@@ -3,6 +3,7 @@
 
 #include <iterator> // distance
 #include <algorithm> // swap
+#include <iostream>
 
 namespace ir {
     using value_type = int;
@@ -37,5 +38,11 @@ namespace ir {
 
     /// Remove duplicates and return the new last index of the array.
     value_type * unique (value_type *first, value_type *last);
+
+    /// Move all black values to the beggining of the array.
+    value_type * sort_marbles (value_type *first, value_type *last);
+
+    /// Move elements of array based on a given pivot.
+    void partition (value_type *first, value_type *last, value_type *pivot);
 }
 #endif
