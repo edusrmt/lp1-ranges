@@ -67,9 +67,3 @@ Just run as usual (assuming `$` is the terminal prompt):
 ```
 $ ./build/driver_int_ranges
 ```
-
-# TODO
-
-Notice that the code provided is **incomplete**!
-You must implement all the functions described in the assignment PDF, design and implement tests (inside `tests/main.cpp`) to
-make sure all the function are working correctly.
