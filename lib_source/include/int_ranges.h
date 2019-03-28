@@ -25,7 +25,7 @@ namespace ir {
     void reverse( value_type *first, value_type*last );
 
     /// Rotate elements in range.
-    value_type * rotate( value_type *first, value_type *n_first, value_type *last );
+    void rotate( value_type *first, value_type *n_first, value_type *last );
 
     /// Multiply all elements of array by `scalar` in range `[first;last)`
     void scalar_multiplication(value_type *first, value_type *last, int scalar);

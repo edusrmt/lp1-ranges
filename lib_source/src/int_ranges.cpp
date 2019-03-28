@@ -44,21 +44,11 @@ namespace ir {
         }
     }
 
-    value_type * rotate(value_type *first, value_type *n_first, value_type *last )
+    void rotate(value_type *first, value_type *n_first, value_type *last )
     {
-        int offset = std::distance(first, n_first) / 2;
-
-        while (first != last - 2) {
-            std::cout << "Swaping " << *first << " and " << *n_first << std::endl;
-            std::swap(*first, *n_first);
-            ++first;
-            ++n_first;
-
-            if(n_first == last) {
-                n_first = first + offset;
-                offset /= 2;
-            }
-        }
+        reverse(first, n_first);
+        reverse(n_first, last);
+        reverse(first, last);
     }
 
     void scalar_multiplication(value_type *first, value_type *last, int scalar) {
