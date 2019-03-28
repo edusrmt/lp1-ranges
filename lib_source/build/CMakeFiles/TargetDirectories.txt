@@ -1,0 +1,8 @@
+/home/edusrmt/Documentos/lp1-ranges/lib_source/build/CMakeFiles/install/strip.dir
+/home/edusrmt/Documentos/lp1-ranges/lib_source/build/CMakeFiles/install/local.dir
+/home/edusrmt/Documentos/lp1-ranges/lib_source/build/CMakeFiles/run_tests.dir
+/home/edusrmt/Documentos/lp1-ranges/lib_source/build/CMakeFiles/edit_cache.dir
+/home/edusrmt/Documentos/lp1-ranges/lib_source/build/CMakeFiles/IntRange.dir
+/home/edusrmt/Documentos/lp1-ranges/lib_source/build/CMakeFiles/list_install_components.dir
+/home/edusrmt/Documentos/lp1-ranges/lib_source/build/CMakeFiles/rebuild_cache.dir
+/home/edusrmt/Documentos/lp1-ranges/lib_source/build/CMakeFiles/install.dir

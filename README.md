@@ -52,7 +52,7 @@ After that, follow these steps:
 
 1. `cd app_source`: enters into the main project directory.
 2. `cp ../lib_source/include/int_ranges.h include`: copy the library header into this new project.
-3. `cp ../lib_source/lib/IntRangelib.a lib`: copy the external library into the `lib` directory of this project.
+3. `cp ../lib_source/lib/libIntRange.a lib`: copy the external library into the `lib` directory of this project.
 2. `mkdir build`: this creates a new directory in which the compilation output will be stored, including the executable.
 3. `cd build`: just moves into the directory created in the step above.
 4. `cmake -G "Unix Makefiles" ..`: asks cmake to create the Makefile based on the script found in `CMakeLists.txt`, one level up.

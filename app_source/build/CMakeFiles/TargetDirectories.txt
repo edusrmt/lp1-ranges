@@ -1,0 +1,3 @@
+/home/edusrmt/Documentos/lp1-ranges/app_source/build/CMakeFiles/rebuild_cache.dir
+/home/edusrmt/Documentos/lp1-ranges/app_source/build/CMakeFiles/driver_int_ranges.dir
+/home/edusrmt/Documentos/lp1-ranges/app_source/build/CMakeFiles/edit_cache.dir

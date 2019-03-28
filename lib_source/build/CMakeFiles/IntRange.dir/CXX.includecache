@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/edusrmt/Documentos/lp1-ranges/lib_source/include/int_ranges.h
+iterator
+-
+algorithm
+-
+iostream
+-
+
+/home/edusrmt/Documentos/lp1-ranges/lib_source/src/int_ranges.cpp
+../include/int_ranges.h
+/home/edusrmt/Documentos/lp1-ranges/lib_source/include/int_ranges.h
+iostream
+-
+

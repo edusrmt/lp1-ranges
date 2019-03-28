@@ -19,6 +19,7 @@ namespace ir {
      */
     value_type * copy( const value_type * , const value_type *, value_type* );
 
+
     /// Reverse the order of the elements in range `[first;last)`.
     void reverse( value_type *first, value_type*last );
 

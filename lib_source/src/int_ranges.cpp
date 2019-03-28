@@ -1,5 +1,4 @@
 #include "../include/int_ranges.h"
-#include <iostream>
 
 namespace ir {
     void negate(value_type *first, value_type *last)
